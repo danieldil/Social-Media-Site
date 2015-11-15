@@ -1,0 +1,108 @@
+html {
+background-color: silver;
+font-family: "Trajan Pro";
+}
+#loginButtons {
+
+	text-align:  center;
+    position:  fixed;
+    top:  15px;
+    right:  15px;
+}
+#loginButtons a:visited {
+	color: black;
+}
+#loginButtons a:hover {
+	color: white;
+	font-size: 150%;
+}
+#welcome strong {
+	position: fixed;
+	top: 3px;
+	left: 30%;
+}
+#welcome {
+	font-size: 250%;
+	position: fixed;
+	left: 0px;
+	font-family: "Trajan Pro";
+	color: white;
+	top: 0px;
+	width: 100%;
+	padding-top: 0px;
+	height: 60px;
+	background-color:  #990000;
+	text-align:  center;
+	box-shadow:  0px 6px 7px 0px #828282;}
+#lorem {
+	position: fixed;
+	top: 80px;
+	font-size: 150%;
+	color: black;
+}
+
+#vent img {
+position: fixed;
+bottom: 0px;
+left: 14%;
+height: 80%;
+width: 70%;
+}
+body {//*background-image:  url("gradient-abstract-hd-wallpaper-2560x1600-9694.jpg");*/
+	color:  Black;
+	position: fixed;
+	}
+h1 {	color: black;
+	font-family: "Arial";
+text-decoration:  underline;
+font-size:  250%;}
+#newsfeed {
+	text-align: left;
+	position: fixed;
+	top: 160px;
+	right:  200;
+	}
+#menu_container {
+position: fixed;
+left: 30%;
+top: 125px;
+}
+#menu_container a {
+color: red;
+	font-family: "Trajan Pro";
+position: fixed;
+}
+#menu_container a:hover {
+font-size:  130%;
+color:  white;
+}
+#date {font-size: 75%;}
+#username {
+font-family:  "Trajan Pro";
+position: fixed;
+left: 35%;
+}
+#logoutp{
+position:fixed;
+top: 10px;
+right: 40px;
+}
+#logoutp a:hover {
+font-size:  130%;
+color:  white;
+}
+#upload_prompt{
+color:white;
+}
+#news {
+		color: black;
+		font-family: 'Times New Roman';
+		position: fixed;
+		top: 269px;
+		right:  200px;
+		height:  300px;
+		width: 700px;
+		overflow:  auto;
+		border:  solid 1px #000;
+		padding:  5px;
+	}

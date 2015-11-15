@@ -1,0 +1,24 @@
+<html>
+<br>You still haven't<br> uploaded a<br> Profile Picture
+<form action="index.php" method="POST" enctype="multipart/form-data">
+	<br><input type="file" name = "file"><br>
+	<input type="image" src = "Untitled-1.PNG" width=15% >
+</form>
+</html>
+<?php
+if(isset($_FILES['file']['tmp_name']))
+	{
+		$tmp_name = $_FILES['file']['tmp_name'];
+		$location = 'uploads/';
+			if(move_uploaded_file($tmp_name,$location.$_FILES['file']['name']))
+				{
+					$query = "UPDATE `first`.`users` SET `pic_uploaded` = '1' WHERE `id` = '".$_SESSION['user_id']."'";
+					$query2 = "UPDATE `first`.`users` SET `pic_name` = '".$_FILES['file']['name']."' WHERE `id` = '".$_SESSION['user_id']."'";
+					if(mysql_query($query)&&(mysql_query($query2))){
+					include 'upload_success.php';
+					}
+					
+				}
+	}
+
+?>

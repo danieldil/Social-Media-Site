@@ -1,0 +1,1 @@
+Here are some snapshots of the database. The users.jpg is the list of users. The post_example.jpg is one of the message board pages. 
