@@ -1,3 +1,4 @@
+
 html {
 background-color: silver;
 font-family: "Trajan Pro";
@@ -20,6 +21,8 @@ font-family: "Trajan Pro";
 	position: fixed;
 	top: 3px;
 	left: 30%;
+	font-size:3vw;
+
 }
 #welcome {
 	font-size: 250%;
@@ -30,7 +33,7 @@ font-family: "Trajan Pro";
 	top: 0px;
 	width: 100%;
 	padding-top: 0px;
-	height: 60px;
+	height: 4vw;
 	background-color:  #990000;
 	text-align:  center;
 	box-shadow:  0px 6px 7px 0px #828282;}
@@ -44,13 +47,15 @@ font-family: "Trajan Pro";
 #vent img {
 position: fixed;
 bottom: 0px;
+top:20%;
 left: 14%;
-height: 80%;
-width: 70%;
+height: 40vw;
+width: 80vw;
 }
 body {//*background-image:  url("gradient-abstract-hd-wallpaper-2560x1600-9694.jpg");*/
 	color:  Black;
 	position: fixed;
+    overflow: scroll;
 	}
 h1 {	color: black;
 	font-family: "Arial";
@@ -60,16 +65,16 @@ font-size:  250%;}
 	text-align: left;
 	position: fixed;
 	top: 160px;
-	right:  200;
+	right:  5vw;
 	}
 #menu_container {
 position: fixed;
-left: 30%;
+left: 40%;
 top: 125px;
 }
 #menu_container a {
 color: red;
-	font-family: "Trajan Pro";
+font-family: "Trajan Pro";
 position: fixed;
 }
 #menu_container a:hover {
@@ -78,17 +83,19 @@ color:  white;
 }
 #date {font-size: 75%;}
 #username {
+height: 500px;
 font-family:  "Trajan Pro";
 position: fixed;
 left: 35%;
 }
 #logoutp{
 position:fixed;
-top: 10px;
+top: 6px;
 right: 40px;
+font-size:  2vw;
 }
 #logoutp a:hover {
-font-size:  130%;
+font-size:  3vw;
 color:  white;
 }
 #upload_prompt{
@@ -100,9 +107,93 @@ color:white;
 		position: fixed;
 		top: 269px;
 		right:  200px;
-		height:  300px;
-		width: 700px;
+		height:  35vw;
+		width: 35vw;
 		overflow:  auto;
 		border:  solid 1px #000;
 		padding:  5px;
 	}
+/*all the jquery for the drop down menu--------------------------------------------------------------------------------------------------------------------------------*/
+nav {
+    background-color:rgb(255,100,100);
+	position: fixed;
+	left: 275px;
+	top: 125px;
+}
+@media all and (max-width: 850px) {		/* --------------------------minimum screen size--------------------------------------------- */
+    nav{
+        margin-left: 0px;
+        left: 280px;					/*this is for the position to not run into the profile picture*/
+    }
+	
+}
+	@media all and (min-width: 1050px) {		/* --------------------------minimum screen size--------------------------------------------- */
+nav a {
+    line-height:1vw;
+    padding:0 12px;
+    margin:0 12px;
+}
+	}
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+
+}
+nav ul li {
+	color:red;
+    display:inline-block;
+    position:relative;
+	font-size:2vw;
+}
+nav li ul {    
+    background-color:rgb(225,75,75);
+    position:absolute;
+    left:0;
+    top:2vw; /* make this equal to the line-height of the links (specified below) */
+    width:25vw;
+}
+nav li li {
+    position:relative;
+    margin:0;
+    display:block;
+}
+/* style all links */
+nav a {
+    line-height:3vw;
+    padding:0 12px;
+    margin:0 12px;
+}
+nav a {
+    color:white;
+    text-decoration:none;
+    display:block;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color:rgb(50,50,50);
+}
+/* show arrows for dropdowns */
+nav li.dropdown > a {
+    background-image:url('../img/arrow-down.png');
+    background-position:right 20px;
+    background-repeat:no-repeat;
+}
+
+nav li li.dropdown > a {
+    background-image:url('../img/arrow-right.png');
+    background-position:right 16px;
+    background-repeat:no-repeat;
+}
+ul.sub-menu {
+    display:none;
+}
+/*HERE I WILL MODIFY THE SLIDER*/
+#users{
+color:green;
+font-size: 4vw;
+}
+#users #01{
+
+}
