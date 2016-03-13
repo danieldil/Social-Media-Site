@@ -4,7 +4,6 @@
     <div id="welcome">
     <p>Super Car Sunday Forums!</p>
     </div>
-    <br><br><br><br>
     Here is your profile
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <div id ="logoutp"><a href="logout.php">Log Out </a> </div>
@@ -19,6 +18,27 @@
 	       echo "<br>";
 	       $pic_name = getUserField('pic_name');
 	       ?>
+        <nav>
+    <ul>
+        <li class="dropdown">
+            <a href="#">Cars</a>
+            <ul class="sub-menu">
+               <li><a href="fav.php?topic=Acura"> Acura </a><br></li>
+               <li><a href="fav.php?topic=AstonMartin"> AstonMartin </a><br></li>
+	           <li><a href="fav.php?topic=Audi"> Audi </a><br></li>
+	           <li><a href="fav.php?topic=bmw"> Bmw </a><br></li>
+	           <li><a href="fav.php?topic=cadillac"> Cadillac </a><br></li>
+	           <li><a href="fav.php?topic=chevrolet"> Chevrolet </a><br></li>
+	           <li><a href="fav.php?topic=chrysler"> Chrysler </a><br></li>
+	           <li><a href="fav.php?topic=ferrari"> Ferrari </a><br></li>
+	           <li><a href="fav.php?topic=ford"> Ford </a><br></li>
+	           <li><a href="fav.php?topic=lancers"> Lancer </a><br></li>
+	           <li><a href="fav.php?topic=mclarens"> Mclarens </a><br></li>
+	           <li><a href="fav.php?topic=posts"> Mustang </a><br></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
     <div id="profilepic">
 	   Profile Picture <br>
 	   <img src="<?php echo "uploads/".$pic_name;?>" height="202" width="240">
@@ -65,10 +85,16 @@
 	           else{count = count+1;}
 	               },3500);
             }
+        //function scroll(){
+           // window.scrollTo(0, document.body.scrollHeight || document.documentElement.scrollHeight);
+            //window.alert("scroll has been called");
+        //}
 
-$(function(){$( '.dropdown' ).hover(
+$(function(){
+    $( '.dropdown' ).hover(
         function(){
             $(this).children('.sub-menu').slideDown(200);
+            //window.setTimeout(scroll(), 1000);
         },
         function(){
             $(this).children('.sub-menu').slideUp(200);
@@ -103,6 +129,7 @@ $(function(){$( '.dropdown' ).hover(
 				} 
 				?>
 		<br>
+    <div id ="sliderbox">
 	Other User's you may know!
 	<div id="users">
 	<div id="01" ><?php echo $array[$randarr[0]];?></div>
@@ -122,27 +149,7 @@ $(function(){$( '.dropdown' ).hover(
 		<img id="4" src="<?php echo "uploads/".$parray[$randarr[3]]; ?>"border="0"alt="pic4"/>
 		<img id="5" src="<?php echo "uploads/".$parray[$randarr[4]]; ?>"border="0"alt="pic5"/>
 	</div>
-
+</div>
 </body>
-<nav>
-    <ul>
-        <li class="dropdown">
-            <a href="#">Cars</a>
-            <ul class="sub-menu">
-    <li>    <a href="fav.php?topic=Acura"> Acura </a><br></li>
-	<li>	<a href="fav.php?topic=AstonMartin"> AstonMartin </a><br></li>
-	<li>	<a href="fav.php?topic=Audi"> Audi </a><br></li>
-	<li>	<a href="fav.php?topic=bmw"> Bmw </a><br></li>
-	<li>	<a href="fav.php?topic=cadillac"> Cadillac </a><br></li>
-	<li>	<a href="fav.php?topic=chevrolet"> Chevrolet </a><br></li>
-	<li>	<a href="fav.php?topic=chrysler"> Chrysler </a><br></li>
-	<li>	<a href="fav.php?topic=ferrari"> Ferrari </a><br></li>
-	<li>	<a href="fav.php?topic=ford"> Ford </a><br></li>
-	<li>	<a href="fav.php?topic=lancers"> Lancer </a><br></li>
-	<li>	<a href="fav.php?topic=mclarens"> Mclarens </a><br></li>
-	<li>	<a href="fav.php?topic=posts"> Mustang </a><br></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
+
 </html>

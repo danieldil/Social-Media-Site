@@ -141,7 +141,12 @@ background-position:center;
 .slider img{
 width:23vw;
 height 23vw;
-display:none;
+}
+
+#sliderbox { 
+    border: solid;
+    border-width: 1px;
+    background-color: #999449;
 }
 
 #news {
@@ -165,8 +170,8 @@ nav {
 	@media all and (min-width: 1050px) {		/* --------------------------minimum screen size--------------------------------------------- */
 nav a {
     line-height:1vw;
-    padding:0 12px;
-    margin:0 12px;
+    padding: 12px;
+    margin: 12px;
 }
 	}
 nav ul {
@@ -195,7 +200,7 @@ nav li li {
 }
 /* style all links */
 nav a {
-    line-height:3vw;
+/*    line-height:vw;*/
     padding:0 12px;
     margin:0 12px;
 }
@@ -209,18 +214,7 @@ nav a:focus,
 nav a:active {
     color:rgb(50,50,50);
 }
-/* show arrows for dropdowns */
-nav li.dropdown > a {
-    background-image:url('../img/arrow-down.png');
-    background-position:right 20px;
-    background-repeat:no-repeat;
-}
 
-nav li li.dropdown > a {
-    background-image:url('../img/arrow-right.png');
-    background-position:right 16px;
-    background-repeat:no-repeat;
-}
 ul.sub-menu {
     display:none;
 }
@@ -232,7 +226,7 @@ font-size: 4vw;
 
 @media all and (max-width: 550px) {		/* --------------------------minimum screen size----------MOBILE PHONES---------------------------------- */
     nav{
-        left: 280px;					/*this is for the position to not run into the profile picture*/
+        
     }
 	
     #profilepic img {  
@@ -260,4 +254,34 @@ font-size: 4vw;
         margin-top: 1vw;
         font-size: 4vw;
     }
+    
+    .slider{
+width:100%;
+height:200px;
+overflow:hidden;
+margin:30px auto;
+background-image:url(120430.gif);
+background-repeat:no-repeat;
+background-position:center;
+}
+    
+.slider img{
+width:100%;
+height 100px;
+}
+    
+#sliderbox { 
+    border: solid;
+    border-width: 1px;
+    background-color: #ccffff;
+}
+    
+    #users{
+color:green;
+font-size: 4vw;
+}
+    
+
+
+
 }
