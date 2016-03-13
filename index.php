@@ -1,3 +1,7 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
 <div id = "php"><?php
 require_once 'core.inc.php';
 require_once 'connect.inc.php';
@@ -17,7 +21,4 @@ else
 
 ?>
 </div>
-<style>
-<link rel="stylesheet" type="text/css" href="style.css" />
-
-</style>
+</html>

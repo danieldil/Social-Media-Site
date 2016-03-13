@@ -2,7 +2,7 @@
 <html>
 <link rel="stylesheet" type="text/css" href="style.css" />
     <div id="welcome">
-    <strong>Super Car Sunday Forums! </strong>
+    <p>Super Car Sunday Forums!</p>
     </div>
     <br><br><br><br>
     Here is your profile
@@ -19,11 +19,15 @@
 	       echo "<br>";
 	       $pic_name = getUserField('pic_name');
 	       ?>
-	Profile Picture <br>
-	<img src="<?php echo "uploads/".$pic_name;?>" height="202" width="240">
-	<br>Change your profile picture <form action="index.php" method="GET">
-		<input type="submit" value="Here"name="ch">
+    <div id="profilepic">
+	   Profile Picture <br>
+	   <img src="<?php echo "uploads/".$pic_name;?>" height="202" width="240">
+	   <br>
+        Change your profile picture 
+        <form action="index.php" method="GET">
+		  <input type="submit" value="Here"name="ch">
 		</form>
+    </div>
 	<?php
 	}
 	if(isset($_GET['ch']))
@@ -74,26 +78,6 @@ $(function(){$( '.dropdown' ).hover(
 </script>
 </head>
 <body onload="Slider();">
-
-<style>
-#may ul {
-	background:#333;
-	color:#fff;
-	padding:10px 20px;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	width:100px;
-	display:none;
-}
-
-#may ul li {
-	list-style:none;
-	font-family:verdana;
-	font-size:3vw;
-	display:none;
-}
-</style>
-		
 		<!-- now we select the usernames and the pictures from the database for the OTHER USER'S YOU MAY KNOW section-->
 		<?php
 		$array = array();
@@ -129,20 +113,7 @@ $(function(){$( '.dropdown' ).hover(
 	</div>
 
 <style type = "text/css">
-.slider{
-width:23vw;
-height:23vw;
-overflow:hidden;
-margin:30px auto;
-background-image:url(120430.gif);
-background-repeat:no-repeat;
-background-position:center;
-}
-.slider img{
-width:23vw;
-height 23vw;
-display:none;
-}
+
 </style>
 <div class="slider">
 		<img id="1" src="<?php echo "uploads/".$parray[$randarr[0]]; ?>"border="0"alt="pic1"/>
@@ -158,7 +129,7 @@ display:none;
         <li class="dropdown">
             <a href="#">Cars</a>
             <ul class="sub-menu">
-				<a href="fav.php?topic=Acura"> Acura </a><br></li>
+    <li>    <a href="fav.php?topic=Acura"> Acura </a><br></li>
 	<li>	<a href="fav.php?topic=AstonMartin"> AstonMartin </a><br></li>
 	<li>	<a href="fav.php?topic=Audi"> Audi </a><br></li>
 	<li>	<a href="fav.php?topic=bmw"> Bmw </a><br></li>

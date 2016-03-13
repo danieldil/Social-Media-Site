@@ -5,7 +5,7 @@
         <title>
             EDOLOMAN.edu
         </title>
-        <strong>Super Car Sunday Forums! </strong>
+        <p>Super Car Sunday Forums! </p>
         </div>
     </head>
     <div id = "loginButtons">
