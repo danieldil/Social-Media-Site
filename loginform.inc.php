@@ -40,15 +40,44 @@ if(isset($_POST['username'])&&isset($_POST['Password']))
 }
 ?>
 <html>
+<style>
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+    input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+.formy {
+    height: 40px;
+    border-radius: 5px;
+    /*background-color: #f2f2f2;*/
+    padding: 40px;
+}
+</style>
 <div id="welcome">
- <strong>Super Car Sunday Forums! </strong>
+ <p>Super Car Sunday Forums! </p>
 </div>
 <body>
-<br><br>
+    <div class = "formy">
 <form action= "<?php echo $current_file;?>" method = 'POST'>
-<div id= "username">Username:<input type="text" name="username"><Br>Password:<input type="password" name="Password"><br>
-
+<div id= "username">
+    <input type="text" name="username" placeholder="Username">
+    <input type="password" name="Password" placeholder="Password"><br>
 <input type=image src=Untitled-1.png alt="Submit feedback" ></div>
-</form>
+</form></div>
 </body
 </html>

@@ -1,4 +1,6 @@
 <html>
+    <style type="text/css">
+    </style>
 	<link rel="stylesheet" type="text/css" href="style.css" />
     <div id="welcome">
     <head>
@@ -9,11 +11,15 @@
         </div>
     </head>
     <div id = "loginButtons">
-        <a href="index.php"> LOG IN</a><br>
-        <a href="register.php">REGISTER</a>
-    </div>
+        MENU
+        <ul>
+        <li><a href="index.php"> LOG IN</a><br></li>
+        <li><a href="register.php">REGISTER</a></li>
+        </ul>
+            </div>
     <div id = "lorem">
-        &nbsp;&nbsp;&nbsp; This is a website for car owners to communicate and organize gatherings. You can choose the make and model of your car to talk to other owners.<br> 
+        &nbsp;&nbsp;&nbsp; We are here to help
+        you organize your supercarsunday fleet!<br> 
         <body>
             <div id="vent">
                 <img src="18grdip3g1tnbjpg.jpg" >
