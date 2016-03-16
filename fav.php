@@ -15,6 +15,7 @@ $pic_name = getUserField('pic_name');
     <img src="<?php echo "uploads/".$pic_name;?>" height="202" width="240"><Br>
     <head>
     Hey this is the forum for <?php echo $forumname;?>!
+        <br><br>
     </head>
     <?php
     include 'newsfeed.inc.php';

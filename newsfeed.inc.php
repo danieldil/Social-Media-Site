@@ -27,6 +27,7 @@ function clearContents(element) {
 if (isset($_GET["w1"])){
 	$query = "INSERT INTO `first`.`".$forumname."` (`user_id`, `post_id`, `post`, `pic_name`,`time`) VALUES ('".$_SESSION['user_id']."', NULL, '".$_GET["w1"]."', '','".time()."')";
 	mysql_query($query);
+//run the query
 	//header( "refresh:.2 ;url= index.php" );
 
 }
@@ -34,15 +35,14 @@ if (isset($_GET["w1"])){
 <div id = "news">
 <?php
 
-//run the query
 $loop = mysql_query("SELECT `post`, `user_id`,`time` FROM `".$forumname."`")
    or die (mysql_error());
 
 while ($row = mysql_fetch_array($loop))
 {
-     echo "<br>"."<br>";
+    echo "<br>"."<br>";
 	$query_run = mysql_query("SELECT `username` FROM `users` WHERE `id` = '".$row['user_id']."'");
-		     echo "- ' ".$row['post']." ' -";
+	echo "- ' ".$row['post']." ' -";
 
 	echo mysql_result($query_run,0,'username');
 		 ?>
