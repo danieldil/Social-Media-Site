@@ -7,7 +7,7 @@
 echo 'This is your news feed <br>';
 //$forumname = 'lancers';
 ?>
-<textarea id="mTA" rows="4" cols="50" onfocus="clearContents(this);">
+<textarea id="mTA" rows="4" cols="30" onfocus="clearContents(this);">
 Create a post!...
 </textarea>
 <button onclick="myFunction()">Submit</button>

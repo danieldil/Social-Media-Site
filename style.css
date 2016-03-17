@@ -9,7 +9,7 @@ html {
     right:  10px;
 }
 #loginButtons:hover ul{
-    display: block;
+    display: initial;
 }
 #loginButtons ul{
     display: none;
@@ -102,10 +102,9 @@ h1 {
     font-size: 75%;
 }
 #username {
-    height: 500px;
-    font-family:  "Trajan Pro";
+    overflow: scroll;
+    height: 300px;
     position: fixed;
-    left: 35%;
 }
 #logoutp{
     position:fixed;
@@ -164,13 +163,13 @@ h1 {
 	}
 /*all the jquery for the drop down menu--------------------------------------------------------------------------------------------------------------------------------*/
 nav {
+    height: 6vw;
     background-color:rgb(255,100,100);
 	
 }
 
 	@media all and (min-width: 1050px) {		/* --------------------------minimum screen size--------------------------------------------- */
 nav a {
-    line-height:1vw;
     padding: 12px;
     margin: 12px;
 }
@@ -185,14 +184,14 @@ nav ul li {
 	color:red;
     display:inline-block;
     position:relative;
-	font-size:2vw;
+	font-size:20px;
 }
 nav li ul {    
     background-color:rgb(225,75,75);
     position:absolute;
     left:0;
     top:2vw; /* make this equal to the line-height of the links (specified below) */
-    width:25vw;
+    width:300px;
 }
 nav li li {
     position:relative;
@@ -281,4 +280,7 @@ nav{
     color:green;
     font-size: 4vw;
 }
+    nav ul li {
+    font-size: 10px;
+    }
 }
