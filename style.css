@@ -26,15 +26,13 @@ html {
     background: white;
 }
 #welcome p {
+    margin-top: 0px;
 	position: fixed;
-	top: 3px;
-	left: 30%;
+	left: 30;
 	font-size:3vw;
-
 }
 
 #welcome {
-	font-size: 250%;
 	position: fixed;
 	left: 0px;
 	font-family: "Trajan Pro";
@@ -44,7 +42,6 @@ html {
 	padding-top: 0px;
 	height: 4vw;
 	background-color:  #990000;
-	text-align:  center;
 	box-shadow:  0px 6px 7px 0px #828282;
 }
 
@@ -102,9 +99,8 @@ h1 {
     font-size: 75%;
 }
 #username {
-    overflow: scroll;
     height: 300px;
-    position: fixed;
+    text-align: center;
 }
 #logoutp{
     position:fixed;
